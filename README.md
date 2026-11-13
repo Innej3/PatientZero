@@ -60,11 +60,3 @@ ABC survives because people in the waiting period have not infected anyone yet. 
 1. Simulating how the outbreak actually spreads beats shortcuts that just look for the middle.
 2. Hubs hijack those shortcuts; simulation is not fooled.
 3. To trace an outbreak back, recovery data (who has had it) matters more than current case counts.
-
-## Limitations
-
-Small networks, 20–60 outbreaks per setting, and a single snapshot in time. ABC's ranks vary by about ±1.5 between identical reruns, so only large differences are meaningful.
-
-## Notebook
-
-`patient_zero.ipynb`: models, the three methods, and all experiments.
