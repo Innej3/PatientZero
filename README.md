@@ -15,7 +15,7 @@ An outbreak spreads through a contact network. Later we can see who is infected,
   - **ABC:** start simulated outbreaks from each candidate and keep the ones that look like the real outbreak.
 - **Rank** = the true source's position in the guessed list (1 is perfect). Random guessing ranks it around halfway.
 
-## 1. SI: nobody recovers
+## SI: nobody recovers
 
 Infected people stay infected, so the outbreak is a full record of what happened.
 
@@ -35,7 +35,7 @@ Infected people stay infected, so the outbreak is a full record of what happened
 
 Once the hub is infected, the outbreak looks centred on it, so methods that look for the middle pick the hub. ABC knows that outbreaks starting at a hub look different, so it rejects it. ABC still works when its infection rate is wrong by a factor of 2 (rank 3–4).
 
-## 2. SIR: people recover
+## SIR: people recover
 
 Now infected people recover and stop spreading. The source was infected first, so it is usually recovered by the time anyone looks: with a fast recovery rate (γ = 0.3), it was still sick in only 5–10% of outbreaks.
 
@@ -46,7 +46,7 @@ Now infected people recover and stop spreading. The source was infected first, s
 
 Current cases alone barely beat guessing. Knowing who has recovered fixes it, because recovered people sit near the start of the outbreak and sick people sit at its edge.
 
-## 3. SEIR: a hidden waiting period
+## SEIR: a hidden waiting period
 
 Newly infected people first go through a period where they carry the infection but cannot pass it on, and tests do not catch them. With longer waiting periods, up to 45% of the outbreak was invisible and the source was almost never still sick.
 
